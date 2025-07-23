@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/ashishprotfolio/static/css/main.a925407a.css",
+    "main.js": "/ashishprotfolio/static/js/main.9dd2cda7.js",
+    "static/css/64.bba8fa55.chunk.css": "/ashishprotfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/ashishprotfolio/static/js/64.56dc6704.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/ashishprotfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.bda0d7b7.chunk.js": "/ashishprotfolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/ProvisionalDgree.jpg": "/ashishprotfolio/static/media/ProvisionalDgree.391ac72e688cf1464f3b.jpg",
+    "static/media/resume.pdf": "/ashishprotfolio/static/media/resume.5abe84f4c85d66dbce30.pdf",
+    "static/media/stanfordLogo.png": "/ashishprotfolio/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
+    "static/media/Montserrat-Regular.ttf": "/ashishprotfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/AICirtification.PNG": "/ashishprotfolio/static/media/AICirtification.b5b1ece93f3397cfe9b0.PNG",
+    "static/media/CirtificationPromotion.PNG": "/ashishprotfolio/static/media/CirtificationPromotion.14476096294dfe298a14.PNG",
+    "static/media/Agustina.woff": "/ashishprotfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/TAPLocalLogo.png": "/ashishprotfolio/static/media/TAPLocalLogo.a7967c5e5235048f7aee.png",
+    "static/media/CirtificationDotNetCore.PNG": "/ashishprotfolio/static/media/CirtificationDotNetCore.84024680a2170afac934.PNG",
+    "static/media/manOnTable.svg": "/ashishprotfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/contactMailDark.svg": "/ashishprotfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/ashishprotfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/AckeeLogo.PNG": "/ashishprotfolio/static/media/AckeeLogo.5b5964d248ca33c772fa.PNG",
+    "static/media/skill.svg": "/ashishprotfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/LakeviewLogo.webp": "/ashishprotfolio/static/media/LakeviewLogo.52cebd7ddc712c77b6a1.webp",
+    "static/media/PortfolioLogo.PNG": "/ashishprotfolio/static/media/PortfolioLogo.73cd32ecc08943acde1e.PNG",
+    "static/media/BayviewLogo.webp": "/ashishprotfolio/static/media/BayviewLogo.cbfed1cc771a644022a3.webp",
+    "index.html": "/ashishprotfolio/index.html",
+    "static/media/ChetuLogo.PNG": "/ashishprotfolio/static/media/ChetuLogo.87d40ec597c0e6f465d5.PNG",
+    "static/media/talksCardBack.svg": "/ashishprotfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.a925407a.css.map": "/ashishprotfolio/static/css/main.a925407a.css.map",
+    "main.9dd2cda7.js.map": "/ashishprotfolio/static/js/main.9dd2cda7.js.map",
+    "64.bba8fa55.chunk.css.map": "/ashishprotfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/ashishprotfolio/static/js/64.56dc6704.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/ashishprotfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.bda0d7b7.chunk.js.map": "/ashishprotfolio/static/js/769.bda0d7b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a925407a.css",
+    "static/js/main.9dd2cda7.js"
+  ]
+}
