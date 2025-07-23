@@ -6,7 +6,6 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
-
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
@@ -14,7 +13,6 @@ const splashScreen = {
 };
 
 // Summary And Greeting Section
-
 const illustration = {
   animated: true // Set to false to use static SVG
 };
@@ -23,19 +21,19 @@ const greeting = {
   username: "Ashish Thakur",
   title: "Hi all, I'm Ashish",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with .Net Core / JavaScript / VueJs and some other cool libraries and frameworks and third-party API."
+    "A passionate Full Stack Senior Software Developer 🚀 having an experience of building Web applications with .Net Core / JavaScript / VueJs / SQL / CICD and some other cool libraries and frameworks and third-party API."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1DpbegSpc9x67Pp1wrrra1SfpPHxTcgQ_/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   // github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/ashishkrtr/",
   gmail: "iamashishkumarthakur@gmail.com",
+  // twitter: "@IamAKTHAKUR",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -46,7 +44,6 @@ const socialMediaLinks = {
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
@@ -61,76 +58,7 @@ const skillsSection = {
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  // softwareSkills: [
-  //   {
-  //     skillName: "C#",
-  //     fontAwesomeClassname: "fab fa-code"
-  //   },
-  //   {
-  //     skillName: "Dot Net",
-  //     fontAwesomeClassname: "fab fa-code"
-  //   },
-  //   {
-  //     skillName: "Dot Net Core",
-  //     fontAwesomeClassname: "fab fa-code"
-  //   },
-  //   {
-  //     skillName: "sql-database",
-  //     fontAwesomeClassname: "fas fa-database"
-  //   },
-  //   {
-  //     skillName: "reactjs",
-  //     fontAwesomeClassname: "fab fa-react"
-  //   },
-  //   {
-  //     skillName: "vuejs",
-  //     fontAwesomeClassname: "fab fa-vuejs"
-  //   },
-  //    {
-  //     skillName: "JavaScript",
-  //     fontAwesomeClassname: "fab fa-js"
-  //   },
-  //   {
-  //     skillName: "html-5",
-  //     fontAwesomeClassname: "fab fa-html5"
-  //   },
-  //   {
-  //     skillName: "css3",
-  //     fontAwesomeClassname: "fab fa-css3-alt"
-  //   },
-  //   {
-  //     skillName: "npm",
-  //     fontAwesomeClassname: "fab fa-npm"
-  //   },
-  //   {
-  //     skillName: "aws",
-  //     fontAwesomeClassname: "fab fa-aws"
-  //   },
-  //   {
-  //     skillName: "Miscrosoft",
-  //     fontAwesomeClassname: "fab fa-cloud"
-  //   },
-  //   {
-  //     skillName: "Plaid API",
-  //     fontAwesomeClassname: "fab fa-cloud"
-  //   },
-  //   {
-  //     skillName: "Salesforce",
-  //     fontAwesomeClassname: "fab fa-cloud"
-  //   },
-  //   {
-  //     skillName: "Check bin API",
-  //     fontAwesomeClassname: "fab fa-cloud"
-  //   },
-  //   {
-  //     skillName: "GIACT API",
-  //     fontAwesomeClassname: "fab fa-cloud"
-  //   },
-  // ],
-
-
+  https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
   { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
   { skillName: "Dot Net", fontAwesomeClassname: "fas fa-code" },
@@ -144,40 +72,23 @@ https://fontawesome.com/icons?d=gallery */
   { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
   { skillName: "npm", fontAwesomeClassname: "fab fa-npm" },
   { skillName: "aws", fontAwesomeClassname: "fab fa-aws" },
-
-  // Suggested replacements for consistency
-  { skillName: "Microsoft", fontAwesomeClassname: "fas fa-cloud" },        // Microsoft Cloud
-  { skillName: "Plaid API", fontAwesomeClassname: "fas fa-link" },         // Data Aggregation
-  { skillName: "Salesforce API", fontAwesomeClassname: "fas fa-chart-line" },  // CRM / Analytics
-  { skillName: "Check bin API", fontAwesomeClassname: "fas fa-credit-card" }, // Card Validation
-  { skillName: "GIACT API", fontAwesomeClassname: "fas fa-shield-alt" }    // Identity Verification
+  { skillName: "Microsoft", fontAwesomeClassname: "fas fa-cloud" },     
+  { skillName: "Plaid API", fontAwesomeClassname: "fas fa-link" },    
+  { skillName: "Salesforce API", fontAwesomeClassname: "fas fa-chart-line" },
+  { skillName: "Check bin API", fontAwesomeClassname: "fas fa-credit-card" },
+  { skillName: "GIACT API", fontAwesomeClassname: "fas fa-shield-alt" }
 ],
   display: true // Set false to hide this section, defaults to true
 };
 
-
-
-
 // Education Section
-
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
-    // {
-    //   schoolName: "Harvard University",
-    //   logo: require("./assets/images/harvardLogo.png"),
-    //   subHeader: "Master of Science in Computer Science",
-    //   duration: "September 2017 - April 2019",
-    //   desc: "Participated in the research of XXX and published 3 papers.",
-    //   descBullets: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    //   ]
-    // },
     {
       schoolName: "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Engineering",
+      subHeader: "Bachelor of Engineering With Honours",
       duration: "September 2013 - April 2017",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
@@ -186,7 +97,6 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
-
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
@@ -207,15 +117,14 @@ const techStack = {
       progressPercentage: "100%"
     },
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "40%" //Insert relative proficiency in percentage
+      Stack: "Frontend/Design",
+      progressPercentage: "40%"
     },
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
@@ -250,13 +159,6 @@ const workExperiences = {
   "Collaborated in a small agile team, improving communication, version control (Git), and documentation skills"
 ]
     },
-    // {
-    //   role: "Software Engineer Intern",
-    //   company: "Airbnb",
-    //   companylogo: require("./assets/images/airbnbLogo.png"),
-    //   date: "Jan 2015 – Sep 2015",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // }
   ]
 };
 
@@ -331,7 +233,7 @@ const bigProjects = {
       ]
     },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -428,11 +330,10 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
-
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -447,11 +348,10 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
-
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
@@ -460,7 +360,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -481,7 +381,6 @@ const contactInfo = {
 };
 
 // Twitter Section
-
 const twitterDetails = {
   userName: "IamAKTHAKUR", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
