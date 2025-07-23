@@ -1,26 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SoftwareSkill.scss";
-import {skillsSection} from "../../portfolio";
+import { skillsSection } from "../../portfolio";
 
 export default function SoftwareSkill() {
+  const [selectedSkill, setSelectedSkill] = useState(null);
+
+  const skillDescriptions = {
+    "C#": "C# is a powerful, object-oriented programming language developed by Microsoft. It’s widely used for building enterprise-grade backend systems, desktop apps, and APIs. I’ve used C# extensively in ASP.NET Core projects to create scalable and secure services. Its rich libraries and tooling support make development fast and maintainable. I leverage async/await, LINQ, and strong typing for high-performance code. C#'s integration with Visual Studio enhances debugging and productivity. It supports modern paradigms like dependency injection and clean architecture. Whether developing RESTful APIs or background services, C# is my go-to language. I use C# with Entity Framework for efficient database interactions. Its versatility allows me to build both web and desktop-based .NET solutions.",
+    "Dot Net": ".NET is a comprehensive framework for building robust and secure applications. It supports MVC, Web API, microservices, and enterprise-level software architecture. I use .NET for backend logic, service layers, and multi-tiered app structures. It’s ideal for projects requiring reliability, security, and performance. The seamless integration with C#, SQL Server, and Azure makes it unbeatable. Its massive ecosystem supports everything from desktop to cloud-native apps. With built-in features like model binding, routing, and authentication, development is rapid. I follow SOLID principles and clean architecture when working with .NET. Its compatibility with DevOps and CI/CD pipelines makes it deployment-ready. .NET empowers me to deliver scalable, maintainable, and testable software.",
+    "Dot Net Core": ".NET Core is Microsoft’s modern, cross-platform development platform. I use it for creating high-performance web APIs and cloud-native services. Its lightweight nature and CLI tools make it perfect for microservice architecture. Apps built with .NET Core run on Windows, Linux, and macOS seamlessly. I deploy .NET Core apps on Docker containers and cloud platforms like Azure & AWS. It supports dependency injection and middleware configuration out of the box. The performance optimizations in .NET Core are ideal for real-time systems. I often use ASP.NET Core for web apps and REST APIs. Its modular design promotes clean and testable code. .NET Core is my top choice for building scalable and future-ready solutions.",
+    "sql-database": "SQL is the heart of data-driven applications, and I specialize in MS SQL Server. I design and manage complex schemas for large-scale relational databases. My expertise includes writing optimized stored procedures and triggers. I use joins, CTEs, and indexing to improve query performance. I’ve implemented normalization and data integrity constraints to avoid redundancy. I use SQL Server Management Studio (SSMS) for managing databases efficiently. I also perform performance tuning using execution plans and query profiling. I’ve written SQL for both transactional systems and reporting modules. SQL skills are crucial in backend development, and I apply them rigorously. From schema design to ETL operations, I handle all aspects of database interaction.",
+    "DevOps(CICD)": "I implement end-to-end DevOps practices to ensure rapid and reliable deployments. Using tools like GitHub Actions and Azure DevOps, I build automated CI/CD pipelines. Code commits trigger test/build/deploy stages for faster release cycles. I integrate Docker for containerization and Kubernetes for orchestration. Versioning, rollback strategies, and automated testing are part of my pipeline design. I’ve managed infrastructure as code using ARM templates and Terraform. Monitoring and alerts are set up with tools like Grafana and Azure Monitor. These practices ensure stability and faster feedback in production environments. I foster a DevOps culture focused on collaboration, automation, and quality. DevOps is not a toolset, but a mindset I apply to all projects.",
+    "reactjs": "React.js is my primary frontend library for building dynamic and performant UIs. I use components, props, and hooks to create modular, maintainable code. With React Router, I build seamless single-page applications (SPAs). The virtual DOM ensures lightning-fast rendering and updates. I’ve implemented Context API for state management in scalable apps. React’s ecosystem (Redux, Axios, Material UI) speeds up development. My apps are fully responsive, accessible, and optimized for performance. Code splitting, lazy loading, and reusable components are core to my approach. React allows me to deliver modern UX that users love. It’s the best tool for building intuitive, responsive, and scalable web apps.",
+    "vuejs": "Vue.js is a progressive framework for building user interfaces. I use Vue for dashboards, admin panels, and lightweight web apps. Its reactivity system and component model make development simple and powerful. Vue CLI helps scaffold projects quickly with built-in configs. I use Vuex for state management and Vue Router for navigation. Its gentle learning curve is perfect for fast prototyping and production use. I’ve used Vuetify and Bootstrap-Vue for responsive UI design. Vue’s SFCs (Single File Components) keep logic and styles modular. Vue is lightweight and ideal for apps with fast load requirements. I love using Vue for projects that require speed and developer friendliness.",
+    "JavaScript": "JavaScript is the backbone of the web, and I use it extensively in frontend logic. From vanilla JS to ES6+, I write clean, functional, and modular code. I handle DOM manipulation, event handling, and animations natively. I use modern features like arrow functions, async/await, destructuring, and promises. I integrate APIs, manage UI behavior, and optimize client-side performance. JavaScript is also my bridge to libraries like React, Vue, and D3.js. I apply JavaScript for form validation, user interaction, and dynamic content. I follow best practices like modularity, DRY principles, and performance profiling. JavaScript enables me to make websites interactive, fast, and engaging. It's my daily driver for frontend interactivity and beyond.",
+    "html-5": "HTML5 is the foundation of every web application I build. I create semantic, accessible, and SEO-optimized markup. My layouts are structured using meaningful tags like <section>, <article>, and <header>. I embed audio, video, and custom controls using native HTML5 elements. Forms, inputs, and validation attributes are crafted to enhance UX. I prioritize accessibility using ARIA attributes and proper label associations. HTML5 enables offline capabilities via service workers and local storage. I build responsive layouts that adapt to all screen sizes. HTML5 ensures fast rendering and compatibility across devices. It’s the first layer of every powerful app I build.",
+    "css3": "CSS3 is my tool to make interfaces attractive and interactive. I use Flexbox and Grid for responsive, fluid layouts. Animations and transitions add life to UI interactions. I write modular, maintainable styles using SCSS and BEM methodology. Media queries help me create seamless mobile-first designs. I leverage pseudo-classes like :hover, :focus, and :nth-child() for enhanced styling. I’ve worked with CSS frameworks like Tailwind, Bootstrap, and Material UI. I implement dark mode, theme switching, and custom animations. CSS variables help in building dynamic design systems. With CSS3, I transform raw HTML into polished, delightful interfaces.",
+    "npm": "npm is the package manager I use to install and manage project dependencies. I’ve worked with thousands of open-source libraries via npm. Scripts in package.json help automate testing, building, and deployment tasks. I create modular packages and understand semantic versioning. npm allows me to maintain consistent environments across development teams. I use npm alongside Webpack and Babel for bundling and transpiling code. I regularly audit packages for vulnerabilities and keep dependencies up to date. Private npm modules help reuse custom utilities across projects. npm scripts simplify repetitive tasks like npm run dev, build, or lint. npm is central to my modern JavaScript project workflow.",
+    "aws": "I use AWS to host, scale, and manage web applications in the cloud. I’ve launched EC2 instances and configured load balancers for high availability. S3 is my go-to for storing static assets and backups. I use Lambda for event-driven, serverless functions. Route 53 helps me manage domain routing and DNS configurations. CloudWatch and CloudTrail provide monitoring and logging capabilities. IAM policies are configured for secure access and resource control. I automate deployments using AWS CodePipeline and CloudFormation. RDS and DynamoDB are used for relational and NoSQL storage needs. AWS allows me to deliver highly available, secure, and scalable apps.",
+    "Microsoft": "My expertise spans a wide range of Microsoft technologies. From developing in Visual Studio to using Azure cloud services, I work end-to-end. I build APIs using .NET, host databases on SQL Server, and deploy via Azure DevOps. I use Microsoft Identity and OAuth2 for authentication. Power BI and Excel integrations support reporting and analytics. I’ve worked on Azure Web Apps, Logic Apps, and Functions. Microsoft’s ecosystem offers tight integration across development, hosting, and productivity tools. I leverage their licensing, documentation, and enterprise support. I follow Microsoft’s secure SDLC practices for enterprise-grade apps. This expertise helps me build scalable, production-ready business solutions.",
+    "Plaid API": "Plaid API enables secure access to users’ banking data and financial info. I integrated it to validate account ownership and retrieve transaction history. OAuth flows and token management were handled securely. Plaid Link was used for a smooth user experience and bank login flow. I worked with endpoints like /transactions, /balance, /identity verification, /auth, /layer and /identity. Its JSON responses were parsed and stored via secure backend APIs. I also handled webhooks to track transaction/identity verifiction retry/beacon updates in real-time. Plaid ensured compliance with financial data aggregation standards. It was used in FinTech projects for KYC and payment verification. I ensured all interactions followed Plaid’s security best practices.",
+    "Salesforce API": "I worked with Salesforce API to connect CRM with internal applications. Used REST API to push and pull leads, contacts, opportunities and MSS. Handled authentication using OAuth 2.0 and token refresh workflows. I integrated workflows that automated lead assignment and status updates. Data mappings and validations ensured smooth integration with external DBs. Created dashboards based on Salesforce data synced via APIs. Used SOQL queries to fetch relevant Salesforce objects. Integration improved visibility across sales, support, and operations teams. Webhook listeners captured real-time events like lead status change. Salesforce API helped improve productivity and reduce manual data entry.",
+    "Check bin API": "BIN/IIN check APIs help verify the type and origin of payment cards. I implemented this API to prevent fraudulent or unsupported card types. The system displayed card brand, issuing bank, and country instantly. API integration was done in the checkout/payment module. BIN lookups helped determine if the card was debit, credit, or prepaid. I used the response data to adjust available payment options. All sensitive operations were done server-side for security. BIN validation enhanced trust and reduced payment failures. Real-time feedback helped users correct invalid card entries. The feature improved conversion rates and fraud prevention.",
+    "GIACT API": "GIACT provides identity and bank account verification services. I integrated GIACT API to validate personal and banking information. It confirmed user identity against government and financial databases. Checks included SSN, DOB, address, and account ownership. This was part of an onboarding/KYC workflow for a FinTech solution. API responses were parsed and logged with high compliance standards. Data encryption and secure transmission were implemented throughout. I handled various response codes and exception handling as per specs. The verification process was seamless and returned results within seconds. GIACT improved trust, compliance, and fraud detection significantly."
+  };
+
+  const closeModal = () => setSelectedSkill(null);
+
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {skillsSection.softwareSkills.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
+          {skillsSection.softwareSkills.map((skills, i) => (
+            <li
+              key={i}
+              className="software-skill-inline"
+              onClick={() => setSelectedSkill(skills.skillName)}
+            >
+              <i className={skills.fontAwesomeClassname}></i>
+              <p>{skills.skillName}</p>
+            </li>
+          ))}
         </ul>
       </div>
+
+      {/* Modal */}
+      {selectedSkill && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span className="close-btn" onClick={closeModal}>&times;</span>
+            <h2>{selectedSkill}</h2>
+            <p>{skillDescriptions[selectedSkill]}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

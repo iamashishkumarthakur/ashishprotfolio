@@ -225,18 +225,30 @@ const workExperiences = {
       // companylogo: require("./assets/images/facebookLogo.png"),
       companylogo: require("./assets/images/ChetuLogo.PNG"),
       date: "December 2022 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Engineered secure and scalable banking modules including user onboarding, transaction monitoring, and financial dashboards. Led the integration of third-party APIs such as Plaid, Stripe, and GIACT for seamless KYC and payment verification.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ],
+  "Led end-to-end development of fintech modules using ASP.NET Core and SQL Server",
+  "Handled direct client communication for requirement gathering and delivery demos",
+  "Managed a team of 3–5 developers, assigning tasks and reviewing code for quality assurance",
+  "Implemented CI/CD pipelines using Azure DevOps and GitHub Actions",
+  "Created comprehensive technical documentation for modules and deployment processes",
+  "Participated in daily standups, sprint planning, and agile ceremonies to ensure on-time delivery"
+]
     },
     {
       role: "Software Engineer",
       company: "Ackeee Software",
       companylogo: require("./assets/images/AckeeLogo.PNG"),
       date: "September 2020 – December 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Contributed to multiple enterprise-level web applications using .NET Core, JavaScript, and SQL Server. Worked on client-specific modules including report generation, data analytics, and backend optimization.",
+      descBullets: [
+  "Contributed to development of enterprise-level web applications using .NET Core and SQL Server",
+  "Built key modules including reporting tools, data analytics dashboards, and backend APIs",
+  "Gained hands-on experience in C#, ASP.NET MVC, ADO.NET, and JavaScript",
+  "Implemented user authentication, role management, and basic security measures",
+  "Learned CI/CD pipeline fundamentals and practiced deployments using Azure DevOps",
+  "Collaborated in a small agile team, improving communication, version control (Git), and documentation skills"
+]
     },
     // {
     //   role: "Software Engineer Intern",
@@ -310,7 +322,7 @@ const bigProjects = {
     {
       image: require("./assets/images/PortfolioLogo.PNG"),
       projectName: "SelfPortFolio",
-      projectDesc: "Engineered core modules of BankTech’s digital banking suite, including user onboarding, secure authentication, and financial dashboards. Utilized ASP.NET Core, SignalR for real-time data sync, and integrated with third-party APIs like Plaid and Stripe for fintech services.",
+      projectDesc: "Designed and developed a responsive personal portfolio using React.js and SCSS. Showcased projects, skills, and achievements with dynamic UI and modal popups. Integrated animations, dark mode, and mobile-friendly layouts for modern UX. Deployed on Netlify/Vercel with continuous updates via GitHub.",
       footerLink: [
         {
           name: "Visit Website",
@@ -332,53 +344,65 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Promotion (Chetu - Certificate of Achievement)",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Received a merit-based promotion at Chetu for consistent high performance, ownership of critical projects, and exceeding expectations in software development. Recognized for technical excellence, team collaboration, and leadership potential.",
+      image: require("./assets/images/CirtificationPromotion.PNG"),
+      //imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Dot Net Core Certification (Udemy)",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Certified in .NET Core MVC – The Complete Guide 2024 with specialization in building modern e-commerce applications. Gained hands-on experience in REST APIs, Entity Framework, security, and deployment best practices.",
+      image: require("./assets/images/CirtificationDotNetCore.PNG"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "AI Master Class (SMIT)",
+      subtitle: "Completed advanced training in Progressive Web App (PWA) development with a focus on AI integration. Gained practical exposure in building responsive, offline-capable apps with real-time AI features.",
+      image: require("./assets/images/AICirtification.PNG"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
       ]
-    }
+    },
+    {
+      title: "BE Degree With Honours",
+      subtitle: "Graduated with Honours in Bachelor of Engineering with a specialization in Web Application Development. Recognized for academic excellence and practical application of concepts in industry-grade projects.",
+      image: require("./assets/images/ProvisionalDgree.jpg"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
